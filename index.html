@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/jv.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Portfolio</title>
+  </head>
+
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" id="navbar__logo">
+        <p>My Portfolio</p>
+      </a>
+    </div>
+  </nav>
+  <body>
+    <div id="fade" onClick="lightbox_close();"></div>
+    <div id="fade2" onClick="lightbox_close2();"></div>
+    <div id="fade3" onClick="lightbox_close3();"></div>
+    <div class="main__container">
+      <div class="main__contents">
+        <div class="coin__container">
+          <div id="coin">
+            <div id="heads" class="heads"></div>
+            <div id="tails" class="tails"></div>
+          </div>
+          <button id="flip">Flip the Coin</button>
+        </div>
+        <div class="introduction__container">
+          <div class="indroduction">
+            <br /><br />
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+            <h1><span class="multiple-text"></span>, I am</h1>
+            <h2>Javier Velazquez</h2>
+            <a>Web & Software Developer</a><br /><br />
+            <p>
+              Computer Science graduate with a strong foundation in software
+              engineering and development, seeking to leverage a diverse
+              educational background and advanced analytical, technical, and
+              programming skills. <br /><br />
+            </p>
+            <button onclick="location.href='Resume.pdf'" id="bluejay">
+              My Resume
+            </button>
+            <button
+              onclick="window.location.href='https://www.linkedin.com/in/javier-velazquez-3b95b927a/';"
+              id="green"
+            >
+              Linkedin
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="second__contents">
+        <div class="main2__contents">
+          <div class="introduction2__container">
+            <div class="indroduction2">
+              <h1>About Me</h1>
+              <br />
+              <p>
+                I am a recent graduate from Florida International University
+                with a passion for web and software development. My skills
+                include HTML, CSS, JavaScript, C/C++, Java, Python, and SQL,
+                honed through dedicated work on personal projects.
+                Problem-solving brings me joy, and I love tackling complex
+                challenges to push my abilities. I have a strong work ethic and
+                constantly strive to learn and improve. Moreover, I am highly
+                adaptable and embrace new technologies and methodologies with
+                ease, making me a fast learner. Let's bring ideas to life and
+                leave a lasting legacy together!
+              </p>
+
+              <section id="section-2"></section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="third_contents">
+        <h1>Personal Projects</h1>
+        <br /><br /><br /><br />
+        <div class="main3__contents">
+          <div class="image3__container">
+            <img src="/images/fw.png" alt="pic" id="main3__img" />
+            <div class="p__text">
+              <p>
+                A health and wellness platform that computes Body Mass Index
+                (BMI) and furnishes personalized daily calorie intake
+                suggestions, aiding individuals in attaining their desired
+                weight objectives.
+              </p>
+            </div>
+            <div id="light">
+              <a
+                href="#section-2"
+                class="boxclose"
+                id="boxclose"
+                onclick="lightbox_close();"
+              ></a>
+              <iframe
+                width="1500"
+                height="762"
+                src="https://www.youtube.com/embed/h0Z5OGHRbQI"
+                title="FitWizard Showcase"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <a href="#" onclick="lightbox_open();">Watch Showcase</a>
+          </div>
+          <div class="image3__container">
+            <img src="/images/cw.png" alt="pic" id="main3__img" />
+            <div class="p__text">
+              <p>
+                An online platform for reporting criminal activities that
+                enables users to submit anonymous tips and information to law
+                enforcement agencies and pertinent authorities.
+              </p>
+            </div>
+            <div id="light2">
+              <a
+                href="#section-2"
+                class="boxclose"
+                id="boxclose"
+                onclick="lightbox_close2();"
+              ></a>
+              <iframe
+                width="1500"
+                height="762"
+                src="https://www.youtube.com/embed/IIs1A5MgC1g"
+                title="CrimeWhisper Showcase"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <a href="#" onclick="lightbox_open2();">Watch Showcase</a>
+          </div>
+          <div class="image3__container">
+            <img src="/images/hr.png" alt="pic" id="main3__img" />
+            <div class="p__text">
+              <p>
+                Immerse yourself in a thrilling gaming adventure as you race at
+                high speeds through a bustling highway environment.
+              </p>
+            </div>
+            <div id="light3">
+              <a
+                href="#section-2"
+                class="boxclose"
+                id="boxclose"
+                onclick="lightbox_close3();"
+              ></a>
+              <iframe
+                width="1500"
+                height="762"
+                src="https://www.youtube.com/embed/bgLEW2oPUUM"
+                title="Highway Racing Showcase"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <a onclick="lightbox_open3();">Watch Showcase</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="fourth_contents">
+        <div class="container">
+          <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>GET IN TOUCH</h3>
+            <div class="cgrid">
+              <textarea id="Name" rows="1" placeholder="Name"></textarea>
+              <textarea id="Email" rows="1" placeholder="Email"></textarea>
+              <textarea id="Subject" rows="1" placeholder="Subject"></textarea>
+              <textarea id="Phone" rows="1" placeholder="Phone"></textarea>
+            </div>
+            <textarea
+              id="Message"
+              rows="4"
+              placeholder="Your Message"
+            ></textarea>
+            <button type="submit">
+              <a>Submit</a>
+            </button>
+          </form>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+          function sendEmail() {
+            Email.send({
+              Host: "smtp.elasticemail.com",
+              Username: "crimewhisper@gmail.com",
+              Password: "4004438F72C598517DEA0BF6365B3827C725",
+              To: "crimewhisper@gmail.com",
+              From: "crimewhisper@gmail.com",
+              Subject: "New Contact Form Enquiry",
+              Body:
+                "Name: " +
+                document.getElementById("Name").value +
+                "<br> Email: " +
+                document.getElementById("Email").value +
+                "<br> Subject: " +
+                document.getElementById("Subject").value +
+                "<br> Phone: " +
+                document.getElementById("Phone").value +
+                "<br> Message: " +
+                document.getElementById("Message").value,
+            }).then((message) =>
+              alert("Your Anonymous Tip has been Submitted.")
+            );
+          }
+        </script>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="popup.js"></script>
+    <script src="apps.js"></script>
+    <script src="coin.js"></script>
+  </body>
+</html>
