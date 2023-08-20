@@ -809,7 +809,7 @@ form button:hover:after {
   .cgrid textarea {
     resize: none;
     border-radius: 4px;
-    width: 150px;
+    width: 130px;
     align-items: center;
     justify-content: center;
   }
