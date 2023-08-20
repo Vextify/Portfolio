@@ -689,7 +689,7 @@ form button:hover:after {
 
 @media screen and (max-width: 600px) {
   .cgrid {
-    margin-left: 3rem;
+    margin-left: 1.5rem;
   }
 
   .image3__container a {
