@@ -189,14 +189,22 @@
 }
 
 .introduction__container {
-  display: grid;
-
-  width: 100%;
   color: white;
 }
 
-.introduction p {
+.email__container {
   display: flex;
+  justify-content: center;
+}
+
+.email__container a {
+  margin-top: 13px;
+  margin-left: 13px;
+}
+
+#email__icon {
+  height: 50px;
+  width: 50px;
 }
 
 .image__container {
@@ -311,7 +319,10 @@
   justify-content: center;
   margin-left: 180px;
 }
-
+.iframe__container {
+  width: 1500px;
+  height: 762px;
+}
 .image3__container video:hover {
   width: 500;
 }
@@ -541,6 +552,15 @@ form button:hover:after {
     justify-content: center;
     margin-left: 150px;
   }
+
+  .iframe__container {
+    margin-left: 120px;
+    width: 1200px;
+    height: 762px;
+  }
+  #boxclose {
+    right: -718px;
+  }
 }
 
 @media screen and (max-width: 1218px) {
@@ -558,7 +578,17 @@ form button:hover:after {
     width: 40%;
     align-items: center;
     justify-content: center;
-    margin-left: 130px;
+    margin-left: 120px;
+  }
+
+  .iframe__container {
+    margin-left: 190px;
+    width: 1000px;
+    height: 600px;
+  }
+
+  #boxclose {
+    right: -588px;
   }
 }
 
@@ -647,6 +677,15 @@ form button:hover:after {
     justify-content: center;
     margin-left: 11rem;
   }
+  .iframe__container {
+    margin-left: 190px;
+    width: 1000px;
+    height: 600px;
+  }
+
+  #boxclose {
+    right: -358px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -666,6 +705,11 @@ form button:hover:after {
     margin-bottom: 0.5rem;
     cursor: pointer;
   }
+  .iframe__container {
+    margin-left: 360px;
+    width: 600px;
+    height: 400px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -684,6 +728,14 @@ form button:hover:after {
     justify-content: center;
     margin-bottom: 0.5rem;
     cursor: pointer;
+  }
+  .iframe__container {
+    margin-left: 413px;
+    width: 450px;
+    height: 300px;
+  }
+  #boxclose {
+    right: -262px;
   }
 }
 
