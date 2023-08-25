@@ -223,51 +223,6 @@
   margin-bottom: 1rem;
 }
 
-.second__contents {
-  margin-top: 100px;
-  height: 70%;
-  background: #40434e;
-  margin-bottom: 75px;
-}
-
-.second__contents h1 {
-  color: #edb230;
-}
-.main2__contents {
-  background: #40434e;
-  justify-content: center;
-  text-align: center;
-  height: 70%;
-  width: 50%;
-  margin: auto;
-  margin-bottom: 15rem;
-  margin-top: 10rem;
-}
-
-.introduction2__container {
-  display: grid;
-
-  width: 100%;
-  height: 50px;
-  color: white;
-}
-
-.introduction2 p {
-  display: flex;
-}
-
-.image2__container {
-  display: flex;
-  align-items: center;
-  height: 500px;
-  width: 50%;
-}
-
-#main2__img {
-  height: 300px;
-  width: 400px;
-}
-
 .third_contents {
   justify-content: center;
   align-items: center;
