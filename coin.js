@@ -13,6 +13,13 @@ function getRandomInt(max) {
 var x = document.getElementById("tails");
 var z = document.getElementById("heads");
 
+function teaseCoin() {
+  coin.setAttribute("class", "");
+  deferFn(function () {
+    coin.setAttribute("class", "animate-tease");
+  }, 100);
+}
+
 function flipCoin() {
   coin.setAttribute("class", "");
   const random = getRandomInt(5);
@@ -43,4 +50,5 @@ function flipCoin() {
   }, 100);
 }
 
+teaseCoin();
 button.addEventListener("click", flipCoin);

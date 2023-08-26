@@ -156,6 +156,16 @@
   background-image: url(images/jv.png);
 }
 
+.animate-tease {
+  animation: teaseFlip;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
 .animate-heads {
   animation: flipHeads 3s;
   animation-fill-mode: forwards;
@@ -180,6 +190,42 @@
   }
   to {
     transform: rotateY(1620deg);
+  }
+}
+
+@keyframes teaseFlip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  10% {
+    transform: rotateY(0deg);
+  }
+  20% {
+    transform: rotateY(30deg);
+  }
+  30% {
+    transform: rotateY(0deg);
+  }
+  40% {
+    transform: rotateY(-30deg);
+  }
+  50% {
+    transform: rotateY(0deg);
+  }
+  60% {
+    transform: rotateY(0deg);
+  }
+  70% {
+    transform: rotateY(30deg);
+  }
+  80% {
+    transform: rotateY(0deg);
+  }
+  90% {
+    transform: rotateY(-30deg);
+  }
+  100% {
+    transform: rotateY(0deg);
   }
 }
 
@@ -563,6 +609,12 @@ form button:hover:after {
     align-items: center;
     justify-content: center;
     margin-left: 100px;
+  }
+
+  .email__container a {
+    margin-top: 13px;
+    margin-left: 13px;
+    margin-bottom: 50px;
   }
 
   .main__container p {
