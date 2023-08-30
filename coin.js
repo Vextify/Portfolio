@@ -38,10 +38,10 @@ function flipCoin() {
     x.style.backgroundImage = "url(images/cw.png)";
   }
   if (randomt === 0) {
-    z.style.backgroundImage = "url(images/hr.png)";
+    z.style.backgroundImage = "url(images/jv.png)";
   }
   if (randomt === 1) {
-    z.style.backgroundImage = "url(images/jv.png)";
+    z.style.backgroundImage = "url(images/hr.png)";
   }
 
   const result = string;
