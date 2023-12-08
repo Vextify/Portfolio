@@ -262,7 +262,7 @@
 
 .main3__contents {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   background: #40434e;
   justify-content: center;
   align-items: center;
@@ -289,7 +289,7 @@
   width: 40%;
   align-items: center;
   justify-content: center;
-  margin-left: 180px;
+  margin-left: 145px;
 }
 .iframe__container {
   width: 1500px;
@@ -445,6 +445,20 @@ form button:hover:after {
   filter: alpha(opacity=80);
 }
 
+#fade4 {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
 #light {
   display: none;
   position: absolute;
@@ -466,6 +480,17 @@ form button:hover:after {
   overflow: visible;
 }
 #light3 {
+  display: none;
+  position: absolute;
+  top: 10%;
+  right: 58%;
+  max-width: 600px;
+  max-height: 360px;
+  z-index: 1002;
+  overflow: visible;
+}
+
+#light4 {
   display: none;
   position: absolute;
   top: 10%;

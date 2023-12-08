@@ -23,8 +23,7 @@ function teaseCoin() {
 function flipCoin() {
   coin.setAttribute("class", "");
   const random = getRandomInt(5);
-  const randomh = getRandomInt(2);
-  const randomt = getRandomInt(2);
+  const randomh = getRandomInt(5);
   if (random > 2) {
     string = "heads";
   } else {
@@ -37,11 +36,14 @@ function flipCoin() {
   if (randomh === 1) {
     x.style.backgroundImage = "url(images/cw.png)";
   }
-  if (randomt === 0) {
-    z.style.backgroundImage = "url(images/jv.png)";
+  if (randomh === 2) {
+    x.style.backgroundImage = "url(images/hr.png)";
   }
-  if (randomt === 1) {
-    z.style.backgroundImage = "url(images/hr.png)";
+  if (randomh === 3) {
+    x.style.backgroundImage = "url(images/pr.png)";
+  }
+  if (randomh === 4) {
+    x.style.backgroundImage = "url(images/pr.png)";
   }
 
   const result = string;
