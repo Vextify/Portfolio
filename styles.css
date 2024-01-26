@@ -269,7 +269,8 @@
   text-align: center;
   height: 100%;
   width: 100%;
-  margin-left: 0.25rem;
+  margin-left: 0rem;
+  font-size: 0.9rem;
 }
 
 .image3__container {
